@@ -1,0 +1,27 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "Simple CRUD API for a Product Catalog using an in-memory database underneath",
+  "scripts": {
+    "start:dev": "tsx watch src/main.ts",
+    "start:prod": "node dist/main.js",
+    "start:multi": "tsx src/cluster/master.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maiano/crud-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/maiano/crud-api/issues"
+  },
+  "homepage": "https://github.com/maiano/crud-api#readme"
+}
