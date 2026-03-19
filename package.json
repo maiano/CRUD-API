@@ -23,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/maiano/crud-api/issues"
   },
-  "homepage": "https://github.com/maiano/crud-api#readme"
+  "homepage": "https://github.com/maiano/crud-api#readme",
+  "devDependencies": {
+    "@biomejs/biome": "2.4.8",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "fastify": "^5.8.2",
+    "uuid": "^13.0.0"
+  }
 }
