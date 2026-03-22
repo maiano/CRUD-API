@@ -1,6 +1,6 @@
-import type { Product } from '../../domain/entities/product.js';
+import type { Product } from "../../domain/entities/product.js";
 
-export type CreateProductDto = Omit<Product, 'id'>;
+export type CreateProductDto = Omit<Product, "id">;
 
 export type UpdateProductDto = Partial<CreateProductDto>;
 

@@ -1,10 +1,10 @@
-import { randomUUID } from 'node:crypto';
+import { randomUUID } from "node:crypto";
 import type {
   CreateProductDto,
   ProductStorage,
   UpdateProductDto,
-} from '../../application/ports/storage.js';
-import type { Product } from '../../domain/entities/product.js';
+} from "../../application/ports/storage.js";
+import type { Product } from "../../domain/entities/product.js";
 
 export class InMemoryProductStorage implements ProductStorage {
   private store = new Map<string, Product>();
