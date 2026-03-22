@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Simple CRUD API for a Product Catalog using an in-memory database underneath",
   "scripts": {
+    "build": "tsc",
     "start:dev": "tsx watch src/main.ts",
-    "start:prod": "node dist/main.js",
+    "start:prod": "npm run build && node dist/main.js",
     "start:multi": "tsx src/cluster/master.ts",
     "test": "vitest run",
     "test:watch": "vitest",
