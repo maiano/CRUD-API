@@ -7,7 +7,7 @@ import type {
 import type { Product } from "../../domain/entities/product.js";
 
 export class InMemoryProductStorage implements ProductStorage {
-  private store = new Map<string, Product>();
+  protected readonly store = new Map<string, Product>();
 
   async getAll(): Promise<Product[]> {
     return Array.from(this.store.values());
